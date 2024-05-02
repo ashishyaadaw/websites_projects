@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+.font-railway {
+  font-family: "Raleway", sans-serif;
+}
+.font-open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* autoslider */
+/* Add this to your stylesheet if not using Tailwind CSS directly */
+.animated-box {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  margin-top: 278px;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Start fully transparent */
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 2px 6px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
